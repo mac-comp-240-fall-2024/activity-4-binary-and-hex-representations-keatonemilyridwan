@@ -31,7 +31,7 @@ void print_all_pos_bytes() {
     unsigned int i;
     
     // String variable to contain binary string
-    char *bin_str; 
+    //char *bin_str; 
 
     printf("\nUNSIGNED CHARS IN HEX AND BINARY\n\n");      // a header line
 
@@ -40,11 +40,11 @@ void print_all_pos_bytes() {
         // TODO: call conversion function to make string rep for binary
         
     	// TODO: add to this print statement to print both hex and binary
-	    printf("Decimal: %hhu | Hex:  | Binary: \n", i);
+	    printf("Decimal: %3d | Hex: %X | Binary: \n", i, i);
 
     	// We need this to manage memory--remember that each memory allocation
     	// requires a matching free()!
-    	free(bin_str);
+    	//free(bin_str);
 
         // Stops the loop
        	if (i == UCHAR_MAX)
